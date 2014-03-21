@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>		
+		<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+		<link rel="shortcut icon" href="../imagenes/favicon.ico"/>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<title>Bench Pers</title>	
+	</head>
+	
+	<body> 
+		
+		<div class="cuerpo">
+			<div class="cabecera"></div>
+			<div id="izq">
+				<div id="dIni"class="opcion" onclick="irMenu(0)">Inicio</div>
+				<div id="dCpu"class="opcion" onclick="irMenu(1)">Cpu</div>
+				<div id="dMem" class="opcion" onclick="irMenu(2)">Memoria</div>
+				<div id="dGraficos" class="opcion" onclick="irMenu(3)">Gráficos</div>
+				<div id="dGlobal"class="opcion"onclick="irMenu(4)">Global</div>
+			</div>
+			<div class="center">
+				<center>
+				<table>
+				</table>
+				<h2>Cpu</h2>
+				Operaciones Enteras <input type = "checkbox" id = "chkEnt" checked>
+				Operaciones Flotante <input type = "checkbox" id = "chkFloat" ><br>
+				<h2>Ram</h2>
+				Creación <input type = "checkbox" id = "chkCrea" checked>
+				Lectura/Escritura <input type = "checkbox" id = "chkIO" >
+				<br>
+				<input type="button" id="btnPers" value="Go!">
+				</center>
+			</div>
+			<div id="derecha" class="der">
+				<div id="dCargando"></div>
+				Resultado:
+				<div id="dResul">
+       	            <p id="pResul"></p>
+				</div>
+                1:Resultado referencia.<br>
+                Resultado inferior: rendimiento inferior<br>
+                Resultado superior: rendimiento superior
+			</div>
+			<div class="pie">
+              Proyecto CoffeeTronic<br>
+              Integrantes: Antonio GD, Antonio MJM, Javier AC, Daniel BC, Victor MM, Luis CP</div>
+			
+		</div>
+		<script type="application/dart" src="../scripts/pers.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+	</body>	
+	
+
+</html>

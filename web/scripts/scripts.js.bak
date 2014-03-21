@@ -1,0 +1,28 @@
+function ej62(){
+	var dia = new Date;
+	var d = dia.getDay();
+	var dNombre;
+	
+	
+	if(d==0){
+		document.f1.txtRet.value="Domingo";
+	}
+	else if(d==1){
+		document.f1.txtRet.value="Lunes";
+	}
+	else if(d==2){
+		document.f1.txtRet.value="Martes";
+	}
+	else if(d==3){
+		document.f1.txtRet.value="Miercoles";
+	}
+	else if(d==4){
+		document.f1.txtRet.value="Jueves";
+	}
+	else if(d==5){
+		document.f1.txtRet.value="Viernes";
+	}
+	else if(d==6){
+		document.f1.txtRet.value="Savado";
+	}
+}
